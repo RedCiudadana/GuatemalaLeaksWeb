@@ -41,7 +41,7 @@
         position: absolute;
         top: 0; left: 0;
         width: 100%; height: 100%;
-        background-image: url(img/wallpaper-city.jpg);
+        background-image: url(img/wallpaper-city.png);
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -80,12 +80,54 @@
         margin-top: 0.65rem;
         margin-bottom: 0.65rem;
       }
+
+      .navbar-brand img {
+        height: 4rem;
+      }
+
+      .nav-aliados {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        text-align: left;
+        display: flex;
+      }
+
+      .nav-aliados div {
+        text-align: center;
+        width: 100%;
+      }
+
+      @media (min-width: 768px) {
+        .nav-aliados div {
+          width: 50%;
+        }
+      }
+
+      @media (min-width: 992px) {
+        .nav-aliados div {
+          width: 25%;
+        }
+      }
+
+      .nav-aliados img {
+        height: auto;
+        max-width: 220px;
+        max-height: 100px;
+        margin: 25px;
+        filter: grayscale(80);
+      }
+
+      .nav-aliados img:hover {
+        filter: unset;
+      }
     </style>
     <!-- Navbar and video -->
     <div class="wallpaper-city">
       <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-transparent">
         <div class="container-fluid p-3 px-lg-5">
-          <a class="navbar-brand" href="#">Navbar</a>
+          <a class="navbar-brand" href="#">
+            <img src="img/logo-brand.png" alt="Logo de GuatemalaLeaks" class="w-auto">
+          </a>
 
           <div class="collapse navbar-collapse show" id="navbarTogglerDemo03">
             <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
@@ -134,27 +176,33 @@
           <div class="col-12 col-lg-4">
             <div class="card w-100 p-5 mt-5 mt-lg-0">
               <div class="body">
-                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="64" height="64" viewBox="0 0 172 172" style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g><path d="M169.98438,86c0,-46.02344 -37.32266,-83.34609 -83.34609,-83.34609c-46.02344,0 -83.34609,37.32266 -83.34609,83.34609c0,46.02344 37.32266,83.34609 83.34609,83.34609c46.02344,0 83.34609,-37.32266 83.34609,-83.34609z" fill="#e5aa17"></path><path d="M92.81953,45.95625c-1.14219,-0.63828 -2.55312,-0.57109 -3.62812,0.13437l-31.94766,20.76094h-11.825c-1.94844,0 -3.56094,1.57891 -3.56094,3.56094v31.14141c0,1.94844 1.57891,3.56094 3.56094,3.56094h11.825l31.94766,20.76094c0.57109,0.36953 1.27656,0.57109 1.94844,0.57109c0.57109,0 1.17578,-0.13437 1.67969,-0.43672c1.14219,-0.63828 1.84766,-1.81406 1.84766,-3.12422v-73.80547c0.03359,-1.27656 -0.70547,-2.48594 -1.84766,-3.12422zM104.57734,111.16172c0.30234,0 0.60469,-0.06719 0.90703,-0.16797c8.12969,-3.15781 13.60547,-12.93359 13.60547,-24.32187c0,-10.07812 -4.43438,-19.14844 -11.2875,-23.17969c-1.17578,-0.70547 -2.72109,-0.30234 -3.42656,0.90703c-0.70547,1.17578 -0.30234,2.72109 0.90703,3.42656c5.375,3.15781 8.83516,10.54844 8.83516,18.87969c0,9.20469 -4.3,17.26719 -10.44766,19.65234c-1.27656,0.50391 -1.91484,1.94844 -1.41094,3.225c0.36953,0.97422 1.34375,1.57891 2.31797,1.57891z" fill="#ffffff"></path><path d="M111.09453,121.54219c0.30234,0 0.60469,-0.06719 0.90703,-0.16797c11.42188,-4.43437 19.41719,-18.8125 19.41719,-34.9375c0,-14.5125 -6.34922,-27.61406 -16.15859,-33.35859c-1.17578,-0.70547 -2.72109,-0.30234 -3.42656,0.90703c-0.70547,1.17578 -0.30234,2.72109 0.90703,3.42656c8.33125,4.87109 13.70625,16.29297 13.70625,29.05859c0,14.10938 -6.68516,26.57266 -16.25937,30.30156c-1.27656,0.50391 -1.91484,1.94844 -1.41094,3.225c0.36953,0.94062 1.31016,1.54531 2.31797,1.54531z" fill="#ffffff"></path></g></g></svg>
+                <img src="img/caracteristica-1.png" alt="Amplificamos" class="img-fluid">
                 <h4 class="font-weight-bold my-4">Amplificamos tu voz</h4>
-                <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, cumque! Omnis, deleniti qui tempore, eum hic, autem dicta accusantium repellat corrupti dignissimos similique dolor cupiditate cumque doloribus? Sequi, recusandae magnam!</p>
+                <p class="m-0">
+                  La alianza de medios y organizaciones de la sociedad civil que conforma Guatemala Leaks analizará y verificará los documentos y si son de interés público los difundirá de forma que la información revelada tenga el máximo impacto.
+                </p>
               </div>
             </div>
           </div>
           <div class="col-12 col-lg-4">
             <div class="card w-100 p-5 mt-5 mt-lg-0">
               <div class="body">
-                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="64" height="64" viewBox="0 0 172 172" style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g><path d="M169.98438,86c0,-46.02344 -37.32266,-83.34609 -83.34609,-83.34609c-46.02344,0 -83.34609,37.32266 -83.34609,83.34609c0,46.02344 37.32266,83.34609 83.34609,83.34609c46.02344,0 83.34609,-37.32266 83.34609,-83.34609z" fill="#e5aa17"></path><path d="M92.81953,45.95625c-1.14219,-0.63828 -2.55312,-0.57109 -3.62812,0.13437l-31.94766,20.76094h-11.825c-1.94844,0 -3.56094,1.57891 -3.56094,3.56094v31.14141c0,1.94844 1.57891,3.56094 3.56094,3.56094h11.825l31.94766,20.76094c0.57109,0.36953 1.27656,0.57109 1.94844,0.57109c0.57109,0 1.17578,-0.13437 1.67969,-0.43672c1.14219,-0.63828 1.84766,-1.81406 1.84766,-3.12422v-73.80547c0.03359,-1.27656 -0.70547,-2.48594 -1.84766,-3.12422zM104.57734,111.16172c0.30234,0 0.60469,-0.06719 0.90703,-0.16797c8.12969,-3.15781 13.60547,-12.93359 13.60547,-24.32187c0,-10.07812 -4.43438,-19.14844 -11.2875,-23.17969c-1.17578,-0.70547 -2.72109,-0.30234 -3.42656,0.90703c-0.70547,1.17578 -0.30234,2.72109 0.90703,3.42656c5.375,3.15781 8.83516,10.54844 8.83516,18.87969c0,9.20469 -4.3,17.26719 -10.44766,19.65234c-1.27656,0.50391 -1.91484,1.94844 -1.41094,3.225c0.36953,0.97422 1.34375,1.57891 2.31797,1.57891z" fill="#ffffff"></path><path d="M111.09453,121.54219c0.30234,0 0.60469,-0.06719 0.90703,-0.16797c11.42188,-4.43437 19.41719,-18.8125 19.41719,-34.9375c0,-14.5125 -6.34922,-27.61406 -16.15859,-33.35859c-1.17578,-0.70547 -2.72109,-0.30234 -3.42656,0.90703c-0.70547,1.17578 -0.30234,2.72109 0.90703,3.42656c8.33125,4.87109 13.70625,16.29297 13.70625,29.05859c0,14.10938 -6.68516,26.57266 -16.25937,30.30156c-1.27656,0.50391 -1.91484,1.94844 -1.41094,3.225c0.36953,0.94062 1.31016,1.54531 2.31797,1.54531z" fill="#ffffff"></path></g></g></svg>
-                <h4 class="font-weight-bold my-4">Amplificamos tu voz</h4>
-                <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, cumque! Omnis, deleniti qui tempore, eum hic, autem dicta accusantium repellat corrupti dignissimos similique dolor cupiditate cumque doloribus? Sequi, recusandae magnam!</p>
+                <img src="img/caracteristica-2.png" alt="Amplificamos" class="img-fluid">
+                <h4 class="font-weight-bold my-4">Seguridad</h4>
+                <p class="m-0">
+                  La seguridad del proceso de envio es esencial. Guatemala Leaks utiliza avazandas tecnologías de seguridad digital diseñadas exclusivamente para esta práctica. Si se siguen los pasos indicados, nadie, incluido nosotros podrá saber el origin de la información.
+                </p>
               </div>
             </div>
           </div>
           <div class="col-12 col-lg-4">
             <div class="card w-100 p-5 mt-5 mt-lg-0">
               <div class="body">
-                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="64" height="64" viewBox="0 0 172 172" style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g><path d="M169.98438,86c0,-46.02344 -37.32266,-83.34609 -83.34609,-83.34609c-46.02344,0 -83.34609,37.32266 -83.34609,83.34609c0,46.02344 37.32266,83.34609 83.34609,83.34609c46.02344,0 83.34609,-37.32266 83.34609,-83.34609z" fill="#e5aa17"></path><path d="M92.81953,45.95625c-1.14219,-0.63828 -2.55312,-0.57109 -3.62812,0.13437l-31.94766,20.76094h-11.825c-1.94844,0 -3.56094,1.57891 -3.56094,3.56094v31.14141c0,1.94844 1.57891,3.56094 3.56094,3.56094h11.825l31.94766,20.76094c0.57109,0.36953 1.27656,0.57109 1.94844,0.57109c0.57109,0 1.17578,-0.13437 1.67969,-0.43672c1.14219,-0.63828 1.84766,-1.81406 1.84766,-3.12422v-73.80547c0.03359,-1.27656 -0.70547,-2.48594 -1.84766,-3.12422zM104.57734,111.16172c0.30234,0 0.60469,-0.06719 0.90703,-0.16797c8.12969,-3.15781 13.60547,-12.93359 13.60547,-24.32187c0,-10.07812 -4.43438,-19.14844 -11.2875,-23.17969c-1.17578,-0.70547 -2.72109,-0.30234 -3.42656,0.90703c-0.70547,1.17578 -0.30234,2.72109 0.90703,3.42656c5.375,3.15781 8.83516,10.54844 8.83516,18.87969c0,9.20469 -4.3,17.26719 -10.44766,19.65234c-1.27656,0.50391 -1.91484,1.94844 -1.41094,3.225c0.36953,0.97422 1.34375,1.57891 2.31797,1.57891z" fill="#ffffff"></path><path d="M111.09453,121.54219c0.30234,0 0.60469,-0.06719 0.90703,-0.16797c11.42188,-4.43437 19.41719,-18.8125 19.41719,-34.9375c0,-14.5125 -6.34922,-27.61406 -16.15859,-33.35859c-1.17578,-0.70547 -2.72109,-0.30234 -3.42656,0.90703c-0.70547,1.17578 -0.30234,2.72109 0.90703,3.42656c8.33125,4.87109 13.70625,16.29297 13.70625,29.05859c0,14.10938 -6.68516,26.57266 -16.25937,30.30156c-1.27656,0.50391 -1.91484,1.94844 -1.41094,3.225c0.36953,0.94062 1.31016,1.54531 2.31797,1.54531z" fill="#ffffff"></path></g></g></svg>
-                <h4 class="font-weight-bold my-4">Amplificamos tu voz</h4>
-                <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, cumque! Omnis, deleniti qui tempore, eum hic, autem dicta accusantium repellat corrupti dignissimos similique dolor cupiditate cumque doloribus? Sequi, recusandae magnam!</p>
+                <img src="img/caracteristica-3.png" alt="Amplificamos" class="img-fluid">
+                <h4 class="font-weight-bold my-4">Anonimato</h4>
+                <p class="m-0">
+                  En Guatemala la Constitución reconoce la libertadad de expresión y los derechos a la información y al secreto periodístico. Guatemala Leaks y todos sus miembros se comprometen a proteger la identidad de sus fuentes, incluso dentro del procedimiento legal.
+                </p>
               </div>
             </div>
           </div>
@@ -177,9 +225,9 @@
               </h1>
             </div>
             <p class="font-weight-bold h4 mt-4 mb-5">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci culpa dolore corporis quo laudantium at dolor officiis numquam maxime eligendi.
+              Ingresa de forma segura al buzón de Guatemala Leaks y envía los documentos y archivo de interés.
             </p>
-            <img src="img/firstStep.png" class="img-fluid" alt="Usuario ingresando a la página de GuatemalaLeaks">
+            <img src="img/paso-1.png" class="img-fluid" alt="Usuario ingresando a la página de GuatemalaLeaks">
           </div>
         </div>
         <div class="row justify-content-center my-5">
@@ -190,9 +238,9 @@
               </h1>
             </div>
             <p class="font-weight-bold h4 mt-4 mb-5">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci culpa dolore corporis quo laudantium at dolor officiis numquam maxime eligendi.
+              Elige a un medio para su investigación periodística
             </p>
-            <img src="img/firstStep.png" class="img-fluid" alt="Usuario ingresando a la página de GuatemalaLeaks">
+            <img src="img/paso-2.png" class="img-fluid" alt="Icono de investigación">
           </div>
         </div>
         <div class="row justify-content-center my-5">
@@ -203,9 +251,9 @@
               </h1>
             </div>
             <p class="font-weight-bold h4 mt-4 mb-5">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci culpa dolore corporis quo laudantium at dolor officiis numquam maxime eligendi.
+              Los documentos que enviaste podrán ser publicados por los medios de la Alianza Guatemala Leaks
             </p>
-            <img src="img/firstStep.png" class="img-fluid" alt="Usuario ingresando a la página de GuatemalaLeaks">
+            <img src="img/paso-3.png" class="img-fluid" alt="Icono de plataform web">
           </div>
         </div>
       </div>
@@ -216,8 +264,10 @@
         <div class="row">
           <div class="col-12">
             <h1 class="font-weight-bold mb-4 text-dark">Envía documentos</h1>
-            <p class="h4 font-weight-normal">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex culpa corporis eius harum aut doloribus, maiores rerum perferendis repudiandae facilis debitis quasi nam neque, minima numquam, mollitia sint amet voluptate?</p>
-            <button class="btn btn-dark font-weight-bold mt-4">
+            <p class="h3 font-weight-normal text-dark">
+              Guatemala Leaks es una plataforma independiente de denuncia ciudadana y transparencia al servicio de la sociedad guatemalteca para revelar la información de interés público.  
+            </p>
+            <button class="btn btn-lg btn-dark font-weight-bold mt-4">
               ENVIAR DOCUMENTOS
             </button>
           </div>
@@ -230,6 +280,31 @@
         <div class="row">
           <div class="col-12">
             <h5>ALIADOS DE GUATEMALALEAKS</h5>
+          </div>
+        </div>
+        <div class="nav-aliados row">
+          <div>
+            <img src="img/logo-plazapublica.png" alt="Logo de Plazapublica">
+          </div>
+          <div>
+            <img src="img/logo-ojoconmipisto.png" alt="Logo de Ojoconmipisto">
+          </div>
+          <div>
+            <img src="img/logo-ocote.png" alt="Logo de Ocote">
+          </div>
+          <div>
+            <img src="img/logo-elintercambio.png" alt="Logo de Elintercambio">
+          </div>
+        </div>
+        <div class="nav-aliados row">
+          <div>
+            <img src="img/logo-noficcion.png" alt="Logo de Noficcion">
+          </div>
+          <div>
+            <img src="img/logo-redciudadana.png" alt="Logo de Redciudadana">
+          </div>
+          <div>
+            <img src="img/logo-poder.png" alt="Logo de Poder">
           </div>
         </div>
       </div>
@@ -247,47 +322,47 @@
                 ¿Cómo funciona guatemalaleaks?
               </h3>
               <p class="el h4 font-weight-light mt-4">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, fuga odit, autem debitis, deserunt eligendi molestias reiciendis impedit sint fugit dolores nam iste saepe. Quae vitae optio tenetur atque? Cupiditate.
+                Guatemalaleaks funciona como una herramienta electrónica al servicio de la ciudadanía guatemalteca y que se fundamenta en lo dispuesto en el artículo 35 de la Constitución Política de la República sobre libre emisión del pensamiento y 35 de la ley de libre emisión del pensamiento, así como en el interés fidedigno por la fiscalización y fortalecimiento de las buenas prácticas dentro de la administración.
               </p>
             </div>
           </div>
           <div class="col-12">
             <div class="trigger w-100 bg-white p-5">
               <h3 class="font-weight-bold">
-                ¿Cómo funciona guatemalaleaks?
+                ¿Por qué debería compartir información con Guatemalaleaks?
               </h3>
               <p class="el h4 font-weight-light mt-4">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, fuga odit, autem debitis, deserunt eligendi molestias reiciendis impedit sint fugit dolores nam iste saepe. Quae vitae optio tenetur atque? Cupiditate.
+                Principalmente porque la fiscalización de la cosa pública es una tarea que nos atañe a todos y todas, asimismo, porque creemos que desde esta alianza de medios de comunicación independientes podemos darle más fuerza a la información que guatemaltecos y guatemaltecas con interés en la fiscalización puedan compartir por medio de la plataforma. Igualmente creemos que estos ejercicios fortalecen a la ciudadanía guatemalteca, dándole un mayor rango de incidencia frente actuaciones opaca o poco transparentes que se desarrollan a lo interno del Estado.
               </p>
             </div>
           </div>
           <div class="col-12">
             <div class="trigger w-100 bg-white p-5">
               <h3 class="font-weight-bold">
-                ¿Cómo funciona guatemalaleaks?
+                ¿Qué tipo de información recibe Guatemalaleaks?
               </h3>
               <p class="el h4 font-weight-light mt-4">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, fuga odit, autem debitis, deserunt eligendi molestias reiciendis impedit sint fugit dolores nam iste saepe. Quae vitae optio tenetur atque? Cupiditate.
+                Cualquier tipo de documentación sobre malos manejos de fondos públicos, tráfico de influencias, contrataciones anómalas, adjudicaciones opacas y demás malas prácticas gubernamentales que guatemaltecos y guatemaltecas deberíamos conocer.
               </p>
             </div>
           </div>
           <div class="col-12">
             <div class="trigger w-100 bg-white p-5">
               <h3 class="font-weight-bold">
-                ¿Cómo funciona guatemalaleaks?
+                ¿Cómo puedo compartir información con Guatemalaleaks?
               </h3>
               <p class="el h4 font-weight-light mt-4">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, fuga odit, autem debitis, deserunt eligendi molestias reiciendis impedit sint fugit dolores nam iste saepe. Quae vitae optio tenetur atque? Cupiditate.
+                *****Tutorial*****                  
               </p>
             </div>
           </div>
           <div class="col-12">
             <div class="trigger w-100 bg-white p-5">
               <h3 class="font-weight-bold">
-                ¿Cómo funciona guatemalaleaks?
+                ¿Qué información necesito tener para compartir con la herramienta?
               </h3>
               <p class="el h4 font-weight-light mt-4">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, fuga odit, autem debitis, deserunt eligendi molestias reiciendis impedit sint fugit dolores nam iste saepe. Quae vitae optio tenetur atque? Cupiditate.
+                No necesitás más que seguir las instrucciones para compartir la información, nosotros no te pedimos información personal de ningún tipo para proteger tu identidad y seguridad.
               </p>
             </div>
           </div>
