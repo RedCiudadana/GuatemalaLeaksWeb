@@ -4,11 +4,18 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="bootstrap.css">
-    <link rel="stylesheet" href="theme_1575560744644.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/theme_1575560744644.css">
 
     <!-- AOS CSS -->
-    <link href="aos.css" rel="stylesheet">
+    <link href="cssSources/aos.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link href="css/fontawesome.css" rel="stylesheet">
+    <link href="css/solid.min.css" rel="stylesheet">
+
+    <!-- GuatemalaLeaks CSS -->
+    <link rel="stylesheet" href="css/main.css">
 
     <!-- Primary Meta Tags -->
     <title>GuatemalaLeaks</title>
@@ -30,129 +37,6 @@
     <meta property="twitter:image" content="https://guatemalaleaks.gt/guatemalaleaks-banner.png">
   </head>
   <body>
-    <style>
-      html {
-        scroll-behavior: smooth;
-      }
-
-      h1, h2, h3, h4, h5, h6, p, span {
-        color: #4d4d4d;
-      }
-
-      .wallpaper-city {
-        position: relative;
-      }
-      .wallpaper-city::before {
-        content: "";
-        position: absolute;
-        top: 0; left: 0;
-        width: 100%; height: 100%;
-        background-image: url(img/wallpaper-city.png);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        filter: brightness(60%);
-      }
-      .wallpaper-city .navbar {
-        /* This will make it stack on top of the ::before */
-        position: relative;
-      }
-
-      .wallpaper-city .container {
-        height: 90vh;
-      }
-
-      .wallpaper-city .row {
-        padding-bottom: 20vh !important;
-      }
-
-      .circle {
-        height: 80px;
-        width: 80px;
-        border-radius: 50%;
-      }
-
-      .circle h1 {
-        line-height: 80px;
-      }
-
-      .container, .container-fluid {
-        padding-top: 4rem;
-        padding-bottom: 4rem;
-      }
-
-      .el {
-        transition: max-height 0.5s;
-        overflow: hidden;
-        max-height: 0;
-      }
-
-      .trigger:hover > .el {
-        max-height: var(--max-height);
-      }
-
-      .faq .col-12 {
-        margin-top: 0.65rem;
-        margin-bottom: 0.65rem;
-      }
-
-      .navbar-brand img {
-        height: 4rem;
-      }
-
-      .navbar a {
-        transition: all 0.5s ease;
-      }
-
-      .nav-aliados {
-        padding-top: 1rem;
-        padding-bottom: 1rem;
-        text-align: left;
-        display: flex;
-      }
-
-      .nav-aliados div {
-        text-align: center;
-        width: 100%;
-      }
-
-      @media (min-width: 768px) {
-        .nav-aliados div {
-          width: 50%;
-        }
-      }
-
-      @media (min-width: 992px) {
-        .nav-aliados div {
-          width: 25%;
-        }
-      }
-
-      .nav-aliados img {
-        height: auto;
-        max-width: 220px;
-        max-height: 100px;
-        margin: 25px;
-        filter: grayscale(80);
-      }
-
-      .nav-aliados img:hover {
-        filter: unset;
-      }
-
-      .back-to-home {
-        padding: 10px;
-        height: 50px;
-        z-index: 1000;
-        width: 50px;
-        position: fixed;
-        bottom: 10px;
-        right: 10px;
-        color: white;
-        background-color: black;
-        font-weight: bold;
-      }
-    </style>
     <!-- Navbar and video -->
     <div class="wallpaper-city">
       <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-transparent" id="navbar">
@@ -406,6 +290,48 @@
         <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+gvaeTAAAAqklEQVRIie3VOwrCQBQFUBGr7MHK0sbOxh1YWWpjehfgFlyK7svCQrAKiCLH5uEviEyMYJEHA8nNzD3pptVKGPTQSzmTUt7HFjsM6i4fYu8+B4zqKh+jUJ4jJt+WT3GKwlVABZaRnZFXLc9xibWIrEARz4uH7/MqwCb+fvaQ3YB4n8WedRUgQ/clewIi6yJLBt6gJeDTtGuRG6ABGqAB/hzoJO4//RpIvrmuJYfPH4yHgk0AAAAASUVORK5CYII=">
       </a>
     </div>
+    <!-- Footer -->
+    <div id="footer">
+      <div class="container first">
+        <!-- {{!-- General info --}} -->
+        <div class="row">
+          <!-- {{!-- ¿Te gusta lo que hacemos? --}} -->
+          <div class="col-12 col-sm-6 col-md-4">
+            <img class="logo-brand" src="img/logo-brand.png" alt="Logo GuatemalaLeaks">
+          </div>
+          <!-- {{!-- Contáctanos --}} -->
+          <div class="col-12 col-sm-6 col-md-4 order-md-3">
+            <h6>Contáctanos:</h6>
+            <ul class="list-unstyled">
+              <li>
+                <a href="mailto:info@redciudadana.org.gt" target="_blank" rel="noopener">
+                  <i class="fas fa-envelope"></i>info@redciudadana.org
+                </a>
+              </li>
+              <li>
+                <i class="fas fa-map-marker-alt"></i>Guatemala, Guatemala
+              </li>
+            </ul>
+          </div>
+          <!-- {{!-- Social follow --}} -->
+          <div class="col-12 follow col-md-4">
+            <h6>Síguenos en:</h6>
+            <div class="d-flex">
+              <a href="https://www.facebook.com/Redciudadanagt/" target="_blank" rel="noopener" class="image-opacity">
+                <img src="mi-guatemala/img/icon-fb-white.png" alt="Facebook">
+              </a>
+              <a href="https://twitter.com/RedxGuate" target="_blank" rel="noopener" class="image-opacity">
+                <img src="mi-guatemala/img/icon-tw-white.png" alt="Twitter">
+              </a>
+              <a href="https://www.instagram.com/redxguate/" target="_blank" rel="noopener" class="image-opacity">
+                <img src="mi-guatemala/img/icon-in-white.png" alt="Instragram">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Scripts -->
     <script src="aos.js"></script>
     <script>
       AOS.init();

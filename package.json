@@ -1,0 +1,11 @@
+{
+  "scripts": {
+    "build:prod": "yarn run purgecss --css cssSources/*.css --content index.html -o css"
+  },
+  "dependencies": {
+    "postcss-cli": "^6.1.3"
+  },
+  "devDependencies": {
+    "purgecss": "^1.4.1"
+  }
+}
