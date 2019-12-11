@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="bootstrap.css">
     <link rel="stylesheet" href="theme_1575560744644.css">
 
+    <!-- AOS CSS -->
+    <link href="aos.css" rel="stylesheet">
+
     <!-- Primary Meta Tags -->
     <title>GuatemalaLeaks</title>
     <meta name="title" content="GuatemalaLeaks">
@@ -28,6 +31,9 @@
   </head>
   <body>
     <style>
+      html {
+        scroll-behavior: smooth;
+      }
 
       h1, h2, h3, h4, h5, h6, p, span {
         color: #4d4d4d;
@@ -51,6 +57,15 @@
         /* This will make it stack on top of the ::before */
         position: relative;
       }
+
+      .wallpaper-city .container {
+        height: 90vh;
+      }
+
+      .wallpaper-city .row {
+        padding-bottom: 20vh !important;
+      }
+
       .circle {
         height: 80px;
         width: 80px;
@@ -83,6 +98,10 @@
 
       .navbar-brand img {
         height: 4rem;
+      }
+
+      .navbar a {
+        transition: all 0.5s ease;
       }
 
       .nav-aliados {
@@ -120,10 +139,23 @@
       .nav-aliados img:hover {
         filter: unset;
       }
+
+      .back-to-home {
+        padding: 10px;
+        height: 50px;
+        z-index: 1000;
+        width: 50px;
+        position: fixed;
+        bottom: 10px;
+        right: 10px;
+        color: white;
+        background-color: black;
+        font-weight: bold;
+      }
     </style>
     <!-- Navbar and video -->
     <div class="wallpaper-city">
-      <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-transparent">
+      <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-transparent" id="navbar">
         <div class="container-fluid p-3 px-lg-5">
           <a class="navbar-brand" href="#">
             <img src="img/logo-brand.png" alt="Logo de GuatemalaLeaks" class="w-auto">
@@ -132,16 +164,16 @@
           <div class="collapse navbar-collapse show" id="navbarTogglerDemo03">
             <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
               <li class="nav-item">
-                <a class="nav-link text-white" href="#">¿Qué es?</a>
+                <a class="nav-link text-white" href="#quees">¿Qué es?</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-white" href="#">¿Cómo funciona?</a>
+                <a class="nav-link text-white" href="#comofunciona">¿Cómo funciona?</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-white" href="#">Alianzas</a>
+                <a class="nav-link text-white" href="#alianzas">Alianzas</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-white" href="#">Preguntas frecuentes</a>
+                <a class="nav-link text-white" href="#faq">Preguntas frecuentes</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link bg-primary px-4 rounded text-dark font-weight-bold mx-auto mt-3 ml-lg-3 my-lg-0 text-center" href="#" tabindex="-1" aria-disabled="false">ENVIAR DOCUMENTOS</a>
@@ -151,14 +183,14 @@
         </div>
       </nav>
       <!-- Video and banner -->
-      <div class="container">
-        <div class="row">
-          <div class="col-12 col-lg-6 order-1 order-lg-2 py-5">
+      <div class="container pb-5 p-md-0">
+        <div class="row align-items-center h-100">
+          <div class="col-12 col-lg-6 order-1 order-lg-2">
             <h1 class="text-white text-center text-lg-left mt-4">
               Envía información de interés público a medio de comunicación de for anónima
             </h1>
           </div>
-          <div class="col-12 col-lg-6 order-2 order-lg-1 text-center py-5">
+          <div class="col-12 col-lg-6 order-2 order-lg-1 text-center">
             <div class="embed-responsive embed-responsive-16by9">
               <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen></iframe>
             </div>
@@ -167,14 +199,14 @@
       </div>
     </div>
     <!-- ¿Qué es GuatemalaLeaks? -->
-    <div class="w-100 bg-white">
+    <div id="quees" class="w-100 bg-white">
       <div class="container">
-        <div class="row text-center">
+        <div class="row justify-content-center text-center">
           <div class="col-12">
             <h2 class="mb-5">¿Qué es Guatemalaleaks?</h2>
           </div>
-          <div class="col-12 col-lg-4">
-            <div class="card w-100 p-5 mt-5 mt-lg-0">
+          <div class="col-10 col-lg-4">
+            <div data-aos="fade-up" data-aos-duration="3000" data-aos-delay="500" class="card w-100 p-5 mt-5 mt-lg-0">
               <div class="body">
                 <img src="img/caracteristica-1.png" alt="Amplificamos" class="img-fluid">
                 <h4 class="font-weight-bold my-4">Amplificamos tu voz</h4>
@@ -184,8 +216,8 @@
               </div>
             </div>
           </div>
-          <div class="col-12 col-lg-4">
-            <div class="card w-100 p-5 mt-5 mt-lg-0">
+          <div class="col-10 col-lg-4">
+            <div data-aos="fade-up" data-aos-duration="3000" data-aos-delay="700" class="card w-100 p-5 mt-5 mt-lg-0">
               <div class="body">
                 <img src="img/caracteristica-2.png" alt="Amplificamos" class="img-fluid">
                 <h4 class="font-weight-bold my-4">Seguridad</h4>
@@ -195,8 +227,8 @@
               </div>
             </div>
           </div>
-          <div class="col-12 col-lg-4">
-            <div class="card w-100 p-5 mt-5 mt-lg-0">
+          <div class="col-10 col-lg-4">
+            <div data-aos="fade-up" data-aos-duration="3000" data-aos-delay="800" class="card w-100 p-5 mt-5 mt-lg-0">
               <div class="body">
                 <img src="img/caracteristica-3.png" alt="Amplificamos" class="img-fluid">
                 <h4 class="font-weight-bold my-4">Anonimato</h4>
@@ -210,7 +242,7 @@
       </div>
     </div>
     <!-- ¿Cómo funciona? -->
-    <div class="w-100 bg-light">
+    <div id="comofunciona" class="w-100 bg-light">
       <div class="container text-center">
         <div class="row">
           <div class="col-12">
@@ -218,7 +250,7 @@
           </div>
         </div>
         <div class="row justify-content-center my-5">
-          <div class="col-6">
+          <div data-aos="fade-up" data-delay="1000" class="col-10 col-md-6">
             <div class="bg-primary circle my-3 mx-auto">
               <h1 class="font-weight-bold text-white mb-5">
                 1
@@ -231,7 +263,7 @@
           </div>
         </div>
         <div class="row justify-content-center my-5">
-          <div class="col-6">
+          <div data-aos="fade-up" data-delay="1000" class="col-10 col-md-6">
             <div class="bg-primary circle my-3 mx-auto">
               <h1 class="font-weight-bold text-white mb-5">
                 2
@@ -244,7 +276,7 @@
           </div>
         </div>
         <div class="row justify-content-center my-5">
-          <div class="col-6">
+          <div data-aos="fade-up" data-delay="1000" class="col-10 col-md-6">
             <div class="bg-primary circle my-3 mx-auto">
               <h1 class="font-weight-bold text-white mb-5">
                 3
@@ -275,7 +307,7 @@
       </div>
     </div>
     <!-- Aliados de guatemalaleaks -->
-    <div class="w-100 bg-white text-center">
+    <div id="alianzas" class="w-100 bg-white text-center">
       <div class="container">
         <div class="row">
           <div class="col-12">
@@ -310,7 +342,7 @@
       </div>
     </div>
     <!-- Preguntas frecuentes -->
-    <div class="w-100 bg-light text-dark text-center faq">
+    <div id="faq" class="w-100 bg-light text-dark text-center faq">
       <div class="container">
         <div class="row">
           <div class="col-12">
@@ -369,6 +401,15 @@
         </div>
       </div>
     </div>
+    <div class="back-to-home text-center">
+      <a href="#navbar">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+gvaeTAAAAqklEQVRIie3VOwrCQBQFUBGr7MHK0sbOxh1YWWpjehfgFlyK7svCQrAKiCLH5uEviEyMYJEHA8nNzD3pptVKGPTQSzmTUt7HFjsM6i4fYu8+B4zqKh+jUJ4jJt+WT3GKwlVABZaRnZFXLc9xibWIrEARz4uH7/MqwCb+fvaQ3YB4n8WedRUgQ/clewIi6yJLBt6gJeDTtGuRG6ABGqAB/hzoJO4//RpIvrmuJYfPH4yHgk0AAAAASUVORK5CYII=">
+      </a>
+    </div>
+    <script src="aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <script>
       var collapses = document.querySelectorAll('.el');
       collapses.forEach((el) => {
