@@ -1,3 +1,34 @@
+@font-face {
+  font-family: Nexa;
+  src: url('../font/Nexa\ Regular.otf');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: Nexa;
+  src: url('../font/Nexa\ Bold.otf');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: Nexa;
+  src: url('../font/Nexa\ Heavy.otf');
+  font-weight: 900;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: Nexa;
+  font-weight: 900;
+}
+
+.font-nexa {
+  font-family: Nexa;
+}
+
+.font-weight-heavy {
+  font-weight: 900;
+}
+
 #footer {
     background-color: #4d4d4d;
     color: white !important;
@@ -63,6 +94,7 @@ html {
     /* This will make it stack on top of the ::before */
     position: relative;
   }
+
 
   .wallpaper-city .container {
     height: 90vh;
