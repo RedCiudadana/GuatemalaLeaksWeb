@@ -11,6 +11,9 @@
   <!-- AOS CSS -->
   <link href="cssSources/aos.css" rel="stylesheet">
 
+  <!-- Tippy CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/tippy.js@5/dist/backdrop.css" />
+
   <!-- Font Awesome -->
   <link href="css/fontawesome.css" rel="stylesheet">
   <link href="css/solid.min.css" rel="stylesheet">
@@ -346,6 +349,8 @@
   </div>
   <!-- Scripts -->
   <script src="aos.js"></script>
+  <script src="https://unpkg.com/popper.js@1"></script>
+  <script src="https://unpkg.com/tippy.js@5"></script>
   <script>
     AOS.init();
   </script>
@@ -366,6 +371,10 @@
           for (let element of elements) {
               element.href = 'https://www.torproject.org/';
           }
+
+          tippy('.callToAction', {
+            content: 'Primero necesitas descargar Tor Browser!'
+          });
         });
     }
   </script>
