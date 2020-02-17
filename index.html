@@ -80,7 +80,7 @@
             <li class="nav-item">
               <a
                 class="nav-link bg-primary px-4 rounded text-dark font-weight-bold mx-auto mt-3 ml-lg-3 my-lg-0 text-center callToAction"
-                href="http://gqzttbxxmtvcuiid.onion/#/" tabindex="-1" aria-disabled="false">ENVIAR DOCUMENTOS</a>
+                href="#" tabindex="-1" aria-disabled="false">Verificando navegador...</a>
             </li>
           </ul>
         </div>
@@ -219,8 +219,8 @@
             Guatemala Leaks es una plataforma independiente y segura para compartir información de interés público de
             forma confidencial
           </p>
-          <a href="http://gqzttbxxmtvcuiid.onion/#/" class="btn btn-lg btn-dark font-weight-bold mt-4 callToAction">
-            ENVIAR DOCUMENTOS
+          <a href="#" class="btn btn-lg btn-dark font-weight-bold mt-4 callToAction">
+            Verificando navegador...
           </a>
         </div>
       </div>
@@ -374,11 +374,22 @@
   <script>
     window.onload = function() {
       fetch('http://gqzttbxxmtvcuiid.onion/#/')
+        .then(() => {
+          console.log('Is tor browser');
+
+          var elements = document.getElementsByClassName('callToAction');
+          for (let element of elements) {
+              element.href = 'http://gqzttbxxmtvcuiid.onion/#/';
+              element.textContent = 'ENVIAR DOCUMENTOS';
+          }
+        })
         .catch(() => {
           console.log('No tor browser');
+
           var elements = document.getElementsByClassName('callToAction');
           for (let element of elements) {
               element.href = 'https://www.torproject.org/';
+              element.textContent = 'Descargar Tor Browser para enviar documentos'
           }
 
           tippy('.callToAction', {
