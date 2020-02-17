@@ -373,7 +373,10 @@
   <!-- Main -->
   <script>
     window.onload = function() {
-      fetch('http://gqzttbxxmtvcuiid.onion/#/')
+      fetch('http://gqzttbxxmtvcuiid.onion/#/', {
+        mode: 'no-cors',
+        cache: 'no-cache'
+      })
         .then(() => {
           console.log('Is tor browser');
 
