@@ -190,3 +190,43 @@ html {
     background-color: black;
     font-weight: bold;
   }
+
+.fullscreen-container {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -100;
+}
+.fullscreen-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80%;
+}
+@media (min-aspect-ratio: 16/9) {
+  .fullscreen-video {
+    width: 100%;
+    height: auto;
+  }
+}
+@media (max-aspect-ratio: 16/9) {
+  .fullscreen-video {
+    width: auto;
+    height: 100%;
+  }
+}
+
+.margen-video{
+  margin-top: 50%;
+}
+
+@media (max-width: 960px) {
+  .margen-video {
+    margin-top: 10%;
+  }
+}
+
