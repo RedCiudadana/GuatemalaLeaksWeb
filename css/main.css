@@ -221,12 +221,12 @@ html {
 }
 
 .margen-video{
-  margin-top: 50%;
+  margin-top: 5%;
 }
 
 @media (max-width: 960px) {
   .margen-video {
-    margin-top: 10%;
+    margin-top: 0%;
   }
 }
 
